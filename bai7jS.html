@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrayLength = Math.floor(Math.random() * 10); 
+        let numbers = [];
+
+        // Điền các số ngẫu nhiên vào mảng (từ 0 đến 100)
+        for (let i = 0; i < arrayLength; i++) {
+            numbers.push(Math.floor(Math.random() * 100));  // Số ngẫu nhiên từ 0 đến 99
+        }
+
+        console.log("Mảng số nguyên:", numbers);
+
+        let k = parseInt(prompt("Nhập một số nguyên để kiểm tra số lần xuất hiện:"));
+
+        // Đếm số lần xuất hiện của k trong mảng
+        let count = 0;
+
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] === k) {
+                count++;
+            }
+        }
+
+        if (count > 0) {
+            alert("Số " + k + " xuất hiện " + count + " lần trong mảng.");
+        } else {
+            alert("Số " + k + " không xuất hiện trong mảng.");
+        }
+    </script>
+</body>
+</html>
