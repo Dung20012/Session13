@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Khai báo mảng có từ 10 đến 20 phần tử ngẫu nhiên
+        let arrayLength = Math.floor(Math.random() * 11);
+        let numbers = [];
+
+        // Điền các số ngẫu nhiên vào mảng
+        for (let i = 0; i < arrayLength; i++) {
+            numbers.push(Math.floor(Math.random() * 100));  // Tạo số ngẫu nhiên từ 0 đến 99
+        }
+
+        // Tính tổng các số lẻ
+        let oddSum = 0; // số lẻ
+        let evenNumber = 0; // số chẵn
+
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 === 0) {
+                evenNumber += numbers[i];  // Nếu số chẵn
+            } else {
+                oddSum += numbers[i];  // Nếu số lẻ
+            }
+        }
+
+        alert("Tổng các số lẻ là: " + oddSum);
+        alert("Tổng các số chẵn là: " + evenNumber);
+    </script>
+</body>
+</html>
