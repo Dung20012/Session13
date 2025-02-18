@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let output = prompt("Nhập dãy số (các số cách nhau bằng dấu cách):");
+
+        let numbers = output.split(" ").map(Number);  
+
+        // Tìm ra phần tử bé nhất
+        let minNumber = Math.min(...numbers);
+
+        alert("Phần tử nhỏ nhất trong mảng là: " + minNumber);
+    </script>
+</body>
+</html>
