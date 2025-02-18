@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+
+        // đổi chuỗi thành số nguyên
+        let number = parseInt(prompt("Nhập một số bất kỳ:"));
+
+        // ktra mảng có chứa giá trị cụ thể không
+        if (arr.includes(number)) {
+            alert("Bingo");
+        } else {
+            alert("Chúc bạn may mắn lần sau");
+        }
+        document.write("Mảng có sẵn:", arr);
+    </script>
+</body>
+</html>
