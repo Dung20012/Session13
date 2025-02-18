@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrayLength = Math.floor(Math.random() * 10);
+        let numbers = [];
+
+        for (let i = 0; i < arrayLength; i++) {
+            numbers.push(Math.floor(Math.random() * 100));
+        }
+
+        document.write("Mảng số nguyên:", numbers);
+
+        let target = parseInt(prompt("Nhập một số nguyên target để tìm các cặp số có tổng bằng target:"));
+
+        // Tìm các cặp số có tổng bằng target
+        let bag = false;
+
+        for (let i = 0; i < numbers.length; i++) {
+            for (let j = i + 1; j < numbers.length; j++) {
+                if (numbers[i] + numbers[j] === target) {
+                    document.write("Cặp số có tổng bằng " + target + ": (" + numbers[i] + ", " + numbers[j] + ")");
+                    bag = true;
+                }
+            }
+        }
+
+        if (!bag) {
+           document.write("Không tìm thấy cặp số nào có tổng bằng " + target); // mục tiêu
+        }
+    </script>
+</body>
+</html>
