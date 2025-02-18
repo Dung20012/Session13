@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = prompt("Nhập dãy số (các số cách nhau bằng dấu cách):");
+
+        // split chuyển đổi từ chuỗi sang mảng
+        let numbers = input.split(" ").map(Number);  // .map(Number) chuyển các phần tử thành số
+
+        // Tìm ra phần tử lớn nhất trong mảng
+        let maxNumber = Math.max(...numbers);
+
+        alert("Phần tử lớn nhất trong mảng là: " + maxNumber);
+    </script>
+</body>
+</html>
