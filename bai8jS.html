@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Mảng lưu trữ các từ tiếng Anh
+        let english = ["hello", "coconut", "apple", "pineapple", "computer", "car", "school", "dog", "cat", "banana"];
+
+        // Mảng lưu trữ các từ tiếng Việt tương ứng
+        let vietnamese = ["xin chào", "dừa", "táo", "dứa", "máy tính", "ô tô", "trường học", "chó", "mèo", "chuối"];
+
+        let search = prompt("Nhập từ tiếng Anh để tra cứu:");
+
+        // chuyển cách kí tự trong 1 chuỗi thành chữ thường
+        search = search.toLowerCase(); 
+
+        // Tìm kiếm từ tiếng Anh trong mảng english
+        let index = english.indexOf(search); // dùng để tìm kiếm một phần tử trong mảng dựa vào giá trị truyền vào tham số của hàm
+
+        if (index !== -1) {
+            // Nếu tìm thấy từ, hiển thị từ tiếng Việt tương ứng
+            alert("Từ tiếng Việt của '" + search + "' là: " + vietnamese[index]);
+        } else {
+            // Nếu không tìm thấy, hiển thị thông báo không tìm thấy
+            alert("Không tìm thấy từ '" + search + "' trong từ điển.");
+        }
+    </script>
+</body>
+</html>
