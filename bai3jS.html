@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Nber = prompt("Nhập vào dãy số, cách nhau bằng dấu phẩy:");
+
+        // Tách chuỗi thành mảng
+        let arr = Nber.split(",").map(Number);
+
+        // Đảo ngược phần tử
+        arr.reverse();
+
+        // Kết quả
+        console.log("Mảng sau khi đảo ngược:", arr);
+        // Nối các phần tử của mảng thành 1 chuỗi
+        alert("Mảng sau khi đảo ngược: " + arr.join(", "));
+
+        console.log("Mảng ban đầu:", Nber);
+    </script>
+</body>
+</html>
